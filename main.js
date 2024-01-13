@@ -25,7 +25,7 @@ function Next(){
   $('.main h2:eq(3)').text('Best friends forever🤗')
   /* This part helps to create a fade animation on elements */
   $('body').fadeOut(1000, function(){
-    $(this).css('background-image', 'url("/Images /Img1.jpg")')
+    $(this).css('background-image', 'url("/Img1.jpg")')
   }).fadeIn(1000)
   /* This part helps to play the music */
   let music=$('audio')[0]
