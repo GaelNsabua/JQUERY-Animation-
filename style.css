@@ -1,0 +1,82 @@
+body{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #51EDF0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.5s ease;
+}
+
+.main{
+   display :flex;
+   flex-direction:column;
+   align-items: center ;
+   justify-content: center;
+   height: 100vh;
+}
+
+.main h2{
+  padding: 10px;
+  border-radius: 10px 0 10px 0;
+  text-shadow: 2px 2px 4px;
+  animation: lightEffect 1s infinite;
+}
+
+.main .p1{
+  border: 3px dotted #AC6E12;
+  background: #EFBA6B;
+  color: #686409;
+}
+
+.main .p2{
+  border: 3px dotted #800B57;
+  background: #F669C4;
+  color: #60264B;
+  display: none;
+}
+
+.main .p3{
+  border: 3px dotted #0C7914;
+  background: #38BA42;
+  color: #54794E;
+  display: none;
+}
+
+.main .p4{
+  border: 3px dotted #0A456C;
+  background: #45ACF0;
+  color: #09324D;
+  display: none;
+}
+
+.main button{
+  font-size: 1.7em;
+  font-family: "Times New Roman", "Verdana", sans-serif;
+  text-align: justify;
+  background: #EFBA6B;
+  border: 2px dotted #0C68A3;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 8px gray;
+  cursor: pointer;
+  animation: lightEffect 0.5s infinite;
+}
+
+@keyframes lightEffect{
+  0%{
+    border: 3px dotted;
+    text-shadow: 2px 2px 4px;
+  }
+  50%{
+    border: none;
+    text-shadow: 0px 0px 0px;
+  }
+  100%{
+    border: 3px dotted;
+    text-shadow: 2px 2px 4px;
+  }
+}
